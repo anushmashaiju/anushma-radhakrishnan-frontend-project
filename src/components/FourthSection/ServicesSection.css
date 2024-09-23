@@ -1,0 +1,152 @@
+/* Container for the entire section */
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  background-color: #121212;
+  margin-left: 100px; 
+  padding: 40px;
+  color: #fff;
+  max-width:90%;
+}
+
+/* Intro section with heading and tag */
+.services-intro {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 100px; /* Ensure reasonable gap between tag and heading */
+}
+
+.services-tag {
+  font-size: 18px;
+  opacity: 0.6;
+  width: 500px; /* Flexible width */
+
+}
+
+.services-heading {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 0;
+  max-width: 100%;
+}
+
+/* Grid layout for service cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
+
+.highlighted-card {
+  background-color: #5a3dff;
+}
+
+.service-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  padding-top: 10px;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+/* Flex layout for card headings */
+.service-card-heading {
+  display: flex;
+  justify-content: space-between; /* Ensure spacing between elements */
+  max-width: 100%;
+}
+
+.arrow-round {
+  border-radius: 50%;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 32px;
+  padding: 5px;
+}
+
+/* Responsive Design */
+
+/* For medium-sized screens */
+@media (max-width: 1024px) {
+  .services-container {
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .services-heading {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+/* For tablet-sized screens */
+@media (max-width: 768px) {
+  .services-container {
+    display: contents;
+    padding: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .services-intro {
+  flex-direction: column; /* Stack the intro content */
+    padding: 20px;
+  gap: 20px; /* Reduce gap between elements */
+  }
+
+  .service-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .services-heading {
+    font-size: 22px;
+   
+  }
+}
+
+/* For mobile-sized screens */
+@media (max-width: 480px) {
+  .services-container {
+    padding: 20px;
+    margin-right: 20px;
+  }
+
+  .services-heading {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .service-card {
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .service-card h3 {
+    font-size: 20px;
+  }
+
+  .service-card p {
+    font-size: 18px;
+  }
+
+  .arrow-round {
+    font-size: 28px;
+  }
+}

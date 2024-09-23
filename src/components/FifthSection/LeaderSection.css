@@ -1,0 +1,161 @@
+/* Container for the entire section */
+.leader-section {
+  background-color: #000; /* Black background */
+  padding: 40px;
+  color: #fff;
+  margin-left: 100px;
+  margin-right: 100px; /* Added right margin to balance */
+}
+
+/* Intro section */
+.leader-intro {
+  margin-bottom: 40px;
+  display: flex;
+  gap: 100px; /* Ensure reasonable gap between tag and heading */
+}
+
+.leader-tag {
+  font-size: 18px;
+  opacity: 0.6;
+  width: 500px; /* Flexible width */
+}
+
+.leader-heading {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-left: 0;
+  max-width: 100%;
+}
+
+/* Cards container */
+.leader-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 20px;
+  width: 100%; /* Full width to make it flexible */
+}
+
+/* Leader card styles */
+.leader-card {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  width: 30%; /* Adjusted width for larger screens */
+  min-width: 250px; /* Minimum width for small screens */
+  flex: 1; /* Make cards more flexible */
+}
+
+.highlighted {
+  background-color: #5a3dff; /* Purple background for highlighted card */
+}
+
+.leader-info h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.leader-info p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+/* Social links container */
+.leader-social {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.social-icon:hover {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .leader-section {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px; /* Reduced padding for tablets */
+  }
+
+  .leader-cards {
+    width: 100%; /* Ensure full-width layout for smaller screens */
+    justify-content: space-around; /* Spread cards evenly */
+  }
+
+  .leader-card {
+    width: 45%; /* Reduce card width for medium screens */
+  }
+
+  .leader-heading {
+    font-size: 28px; /* Reduce heading size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .leader-section {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .leader-intro {
+    flex-direction: column; /* Stack the intro content */
+    gap: 20px; /* Reduce gap between elements */
+  }
+
+  .leader-cards {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px;
+  }
+
+  .leader-card {
+    width: 100%; /* Full-width cards on small screens */
+  }
+
+  .leader-heading {
+    font-size: 24px; /* Further reduce heading size */
+  }
+
+  .leader-social {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .leader-section {
+    padding: 20px;
+  }
+
+  .leader-heading {
+    font-size: 20px; /* Smaller heading for mobile */
+  }
+
+  .leader-card {
+    padding: 15px;
+    border-radius: 30px; /* Smaller radius for mobile */
+  }
+
+  .leader-info h3 {
+    font-size: 20px;
+  }
+
+  .leader-info p {
+    font-size: 14px;
+  }
+
+  .social-icon {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,250 @@
+/* Base styling remains unchanged */
+.second-section {
+  background-color: #0a0a0a;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  height: 400px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+}
+
+.question {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+.shape {
+  width: 350px;
+  height: 120px;
+  background-color: #4b2cf2;
+  border-radius: 80px;
+}
+
+.description h2 {
+  font-size: 28px;
+  line-height: 1.5;
+  width: 500px;
+  font-weight: 100;
+}
+
+.description {
+  padding-left: 250px;
+}
+
+.description h2 span {
+  color: #858589;
+}
+
+.learn-more-btn {
+  background-color: #4b2cf2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.learn-more-btn span {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.banner {
+  padding: 80px;
+}
+
+.banner1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d2d2e;
+  padding: 20px;
+  transform: rotate(-3deg);
+  color: rgb(111, 111, 111);
+}
+
+.banner1 p {
+  margin: 0 0 0 25px;
+  font-size: 20px;
+}
+
+.banner2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4b2cf2;
+  padding: 20px;
+  transform: rotate(3deg);
+  color: white;
+}
+
+.banner2 p {
+  margin: 0 0 0 25px;
+  font-size: 20px;
+}
+
+.diamond {
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+/* Responsive Adjustments */
+
+/* Screens between 1200px and 992px */
+@media (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .text-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .description {
+    padding-left: 150px;
+  }
+
+  .description h2 {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .shape {
+    width: 300px;
+    height: 100px;
+  }
+}
+
+/* For tablet screens (max-width: 992px) */
+@media (max-width: 992px) {
+  .content {
+    height: auto;
+  }
+
+  .text-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .question {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+
+  .description {
+    padding-left: 50px;
+  }
+
+  .description h2 {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .learn-more-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .banner {
+    padding: 40px;
+  }
+
+  .banner1 p, .banner2 p {
+    font-size: 24px;
+  }
+}
+
+/* For mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description h2 {
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-container {
+    padding-left: 0;
+  }
+
+  .question {
+    font-size: 14px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .shape {
+    width: 250px;
+    height: 80px;
+  }
+
+  .learn-more-btn {
+    font-size: 14px;
+  }
+
+  .banner {
+    padding: 20px;
+  }
+
+  .banner1 p, .banner2 p {
+    font-size: 20px;
+  }
+}
+
+/* For small mobile screens (max-width: 576px) */
+@media (max-width: 576px) {
+  .content {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .description h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .shape {
+    width: 200px;
+    height: 60px;
+  }
+
+  .learn-more-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .banner1 p, .banner2 p {
+    font-size: 18px;
+  }
+}

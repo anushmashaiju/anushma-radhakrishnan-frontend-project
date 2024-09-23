@@ -1,0 +1,161 @@
+.navbar {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center;
+  z-index: 10;
+  padding: 0 100px; /* Adding padding for spacing */
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu {
+  border: 0.5px solid rgb(255, 254, 254);
+  padding: 0;
+  list-style: none;
+  border-radius: 50px;
+  font-size: 20px;
+
+}
+
+.menu li {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.navbar button {
+  background-color: rgb(56, 56, 236);
+  padding: 10px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: auto; /* Moves the button to the left side of the navbar */
+
+}
+
+.logo {
+  font-weight: 100;
+  font-size: 38px;
+padding-right: 50px;
+}
+
+.arrow {
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none; /* Hide the menu on smaller screens */
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* Show hamburger icon */
+  .hamburger {
+    display: block;
+  }
+
+  /* When the menu is open */
+  .menu.open {
+    display: flex; /* Show the menu when open */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 0;
+    padding: 20px;
+  }
+
+  .menu li {
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+  }
+
+  .menu li:last-child {
+    border-bottom: none;
+  }
+
+  /* Keep the button visible */
+  .navbar button {
+    display: inline-block; /* Keep the button visible */
+    font-size: 18px; /* Adjust font size for mobile */
+    padding: 8px 12px; /* Adjust padding for mobile */
+    margin-left: 0; /* Remove large margin */
+    margin-top: 10px; /* Add margin-top for spacing in mobile view */
+  }
+
+  .arrow {
+    font-size: 12px;
+    margin-left: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar ul li a {
+    font-size: 18px;
+  }
+
+  .navbar button {
+    font-size: 10px; /* Slightly smaller button on very small screens */
+    padding: 8px;
+
+    border-radius: 30px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+  .arrow {
+    font-size: 10px;
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar ul li a {
+    font-size: 18px;
+  }
+
+  .navbar button {
+    font-size: 10px; /* Slightly smaller button on very small screens */
+    padding: 8px 12px;
+    width: 20px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+  .arrow {
+    font-size: 8px;
+    margin-left: 2px;
+  }
+}
+

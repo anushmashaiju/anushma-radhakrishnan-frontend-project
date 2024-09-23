@@ -1,0 +1,179 @@
+.contact-section {
+  display: flex;
+  padding: 100px;
+  background-color: #000;
+  color: #fff;
+  margin-left: 100px;
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-left h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-icons span {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-phone, .contact-email {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.contact-right {
+  flex: 1;
+}
+
+.contact-form label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid rgb(46, 45, 45);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 5px 5px 10px 25px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid rgb(71, 70, 70);
+  cursor: pointer;
+}
+
+.send {
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+.label-req {
+  display: flex;
+  gap: 5px;
+}
+
+.req {
+  color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-section {
+      padding: 80px; /* Adjust padding for tablets */
+      margin-left: 50px;
+      flex-direction: column; /* Stack the form and contact details */
+      align-items: flex-start;
+  }
+
+  .contact-left {
+      margin-bottom: 40px;
+  }
+
+  .contact-left h2 {
+      font-size: 26px; /* Reduce font size */
+  }
+
+  .contact-phone, .contact-email {
+      font-size: 16px; /* Smaller font for contact info */
+  }
+
+  .social-icons span {
+      font-size: 20px; /* Reduce icon size */
+  }
+
+  .contact-right {
+      width: 100%;
+  }
+
+  .contact-form input, .contact-form textarea {
+      font-size: 14px; /* Smaller font for inputs */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+      padding: 50px; /* Further reduce padding for mobile */
+      margin-left: 0; /* Remove side margin */
+      flex-direction: column;
+  }
+
+  .contact-left {
+      text-align: center; /* Center content for smaller screens */
+  }
+
+  .contact-left h2 {
+      font-size: 24px; /* Further reduce heading size */
+  }
+
+  .social-icons {
+      justify-content: center; /* Center social icons */
+  }
+
+  .contact-right {
+      width: 100%;
+  }
+
+  .contact-form input, .contact-form textarea {
+      font-size: 14px;
+      padding: 8px; /* Adjust padding for mobile */
+  }
+
+  .contact-form button {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+
+  .send {
+      font-size: 14px; /* Adjust button font size */
+      margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+      padding: 30px; /* Minimal padding for small devices */
+  }
+
+  .contact-left h2 {
+      font-size: 20px; /* Adjust heading size for very small screens */
+  }
+
+  .contact-phone, .contact-email {
+      font-size: 14px; /* Smaller font for contact details */
+  }
+
+  .social-icons span {
+      font-size: 18px; /* Smaller icons */
+  }
+
+  .contact-form input, .contact-form textarea {
+      padding: 6px; /* Less padding for form inputs */
+  }
+
+  .contact-form button {
+      font-size: 12px; /* Smaller button font */
+      padding: 8px 15px;
+  }
+}
